@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        // Ignore this in your implementation
+        window.isMbscDemo = true;
+    </script>
+
+    <title>
+        Configure the timeline
+    </title>
+
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <!-- Mobiscroll JS and CSS Includes -->
+    <link rel="stylesheet" href="css/mobiscroll.jquery.min.css">
+    <script src="js/mobiscroll.jquery.min.js"></script>
+
+    <style type="text/css">
+            body {
+        margin: 0;
+        padding: 0;
+    }
+
+    body,
+    html {
+        height: 100%;
+    }
+
+    .demo-daily-weekly-timeline {
+        height: 100%;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div mbsc-page class="demo-daily-weekly-monthly-yearly-timeline">
+        <div style="height:100%">
+                <div id="demo-daily-weekly-timeline"></div>
+        </div>
+    </div>
+
+    <script>
+        
+    mobiscroll.setOptions({
+        locale: mobiscroll.localeEs,  // Specify language like: locale: mobiscroll.localePl or omit setting to use default
+        theme: 'ios',                 // Specify theme like: theme: 'ios' or omit setting to use default
+            themeVariant: 'light'     // More info about themeVariant: https://docs.mobiscroll.com/5-20-0/eventcalendar#opt-themeVariant
+    });
+    
+    $(function () {
+        var inst = $('#demo-daily-weekly-timeline').mobiscroll().eventcalendar({
+            
+            view: {     // More info about view: https://docs.mobiscroll.com/5-20-0/eventcalendar#opt-view
+                timeline: {
+                    type: 'week',
+                    startDay: 1,
+                    endDay: 1,
+                    timeCellStep: 60,
+                    timeLabelStep: 60
+                }
+            },
+            resources: [{             // More info about resources: https://docs.mobiscroll.com/5-20-0/eventcalendar#opt-resources
+                id: 1,
+                name: 'Mesa 1',
+                color: '#fdf500'
+            }, {
+                id: 2,
+                name: 'Mesa 2',
+                color: '#ff0101'
+            }, {
+                id: 3,
+                name: 'Heroes Square',
+                color: '#01adff'
+            }, {
+                id: 4,
+                name: 'Thunderdome',
+                color: '#239a21'
+            }, {
+                id: 5,
+                name: 'King’s Landing',
+                color: '#ff4600'
+            }, {
+                id: 6,
+                name: 'Gathering Field',
+                color: '#8f1ed6'
+            }]
+        }).mobiscroll('getInst');
+        
+        /* 
+        $.getJSON('https://trial.mobiscroll.com/daily-weekly-events/?callback=?', function (events) {
+            inst.setEvents(events);
+        }, 'jsonp'); */ 
+        inst.setEvents([{"start":"2022-12-05T09:00:00.000Z","end":"2022-12-05T11:30:00.000Z","title":"Alejandro Quintero","resource":2},{"start":"2022-12-05T11:00:00.000Z","end":"2022-12-05T15:00:30.000Z","title":"Status Update mtg.","resource":4},{"start":"2022-12-06T11:00:00.000Z","end":"2022-12-06T14:30:00.000Z","title":"Product team mtg.","resource":1},{"start":"2022-12-06T14:00:00.000Z","end":"2022-12-06T17:00:00.000Z","title":"Wrapup mtg.","resource":2},{"start":"2022-12-06T12:00:00.000Z","end":"2022-12-06T15:00:00.000Z","title":"Board mtg.","resource":6},{"start":"2022-12-08T12:00:00.000Z","end":"2022-12-08T17:00:00.000Z","title":"Decision Making mtg.","resource":1},{"start":"2022-12-07T11:00:00.000Z","end":"2022-12-07T15:30:00.000Z","title":"Shaping the Future","resource":2},{"start":"2022-12-07T14:00:00.000Z","end":"2022-12-07T17:00:00.000Z","title":"Client Training","resource":4},{"start":"2022-12-07T09:00:00.000Z","end":"2022-12-07T12:30:00.000Z","title":"Innovation mtg.","resource":5},{"start":"2022-12-08T08:00:00.000Z","end":"2022-12-08T13:00:00.000Z","title":"Innovation mtg.","resource":6},{"start":"2022-12-08T11:00:00.000Z","end":"2022-12-08T16:00:00.000Z","title":"Decision Making mtg.","resource":4},{"start":"2022-12-08T10:00:00.000Z","end":"2022-12-08T13:00:00.000Z","title":"Stakeholder mtg.","resource":5},{"start":"2022-12-09T09:00:00.000Z","end":"2022-12-09T14:00:00.000Z","title":"Impact Training","resource":2},{"start":"2022-12-09T11:00:00.000Z","end":"2022-12-09T17:00:00.000Z","title":"Portraits of Success","resource":3}]); 
+    
+    });
+    </script>
+
+</body>
+
+</html>

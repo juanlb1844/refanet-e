@@ -1,0 +1,406 @@
+@extends('layout') 
+
+@section('page')
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://gruposolana.com/.desarrollos/suzuki/public/owlslider/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="https://gruposolana.com/.desarrollos/suzuki/public/owlslider/owl.theme.default.css">
+ 
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+ 
+  
+
+<style type="text/css">
+	 
+</style>
+ 
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-seleccionar-marca" style="display: none;">
+	<div style="margin-bottom: 70px; margin-top: 20px;" class="container-buscador">
+			<div style="text-align: center; margin-bottom: 20px;">  
+				<h1 class="main-text">BUSQUEMOS TU REFACCIÓN</h1>
+				<span class="main-text-s">Selecciona la marca de tu vehículo...</span>
+			</div>  
+		    <div class="owl-carousel marcas-owl owl-sli" style="text-align: center;"> 
+                    <div class="item marca" style="text-align: center;"> 
+                        <div  class="" style="text-align: center;"> 
+                        	 <img class="selected-car" src="https://solanarefacciones.com/media/wysiwyg/cartown/brands/chevrolet.png">
+                        </div>
+                    </div>  
+            </div>
+            <div class="container-controles-buscador" style="text-align: center;">
+            	<div>
+            		<!-- <button class="btn btn-primary btn-buscar-marca">BUSCAR</button> --> 
+            	</div>
+            </div>
+	</div>
+</div> 
+
+
+ <style type="text/css">
+ 	.owl-sli .owl-height {
+ 		height: 320px!important; 
+ 	}
+ 	input:active, input:focus  {
+ 		border: 2px solid #c4262e!important;
+ 		box-shadow: none!important;  
+ 	}
+ </style>
+   
+ 
+<div class="products-section col-lg-12 col-md-12 col-sm-12" style="padding: 30px 0px;">
+<div class="products-section col-lg-12 col-md-12 col-sm-12"> 
+	<div class="container-header-cart">
+		<h1 style="font-weight: 900; padding-left: 10px;">Proceso de pago </h1>
+	</div>
+</div>
+
+	<div class="products-section col-lg-9 col-md-12 col-sm-12" style="margin-bottom: 40px;"> 
+		<div  class="products-section col-lg-12 col-md-12 col-sm-12" style="border: 1px solid #efeeeb; border-radius: 3px; padding: 10px; ">
+			 
+			<div class="section-container checkout-step step-datos-cliente col-lg-12" style="padding: 20px 20px;">
+				<div class="section-content">
+					<div class="section-header">
+						<div class="col-lg-12" style="padding: 0px;">
+							<div class="col-lg-6" style="padding: 0px;">
+								<h3 style="margin-top: 0px;">Información de contacto</h3> 
+							</div>
+							<div class="col-lg-6">
+								<h4 style="margin-top: 0px;">¿Ya tienes una cuenta? <a href="">Iniciar sesión</a></h4>
+							</div> 
+						</div>
+					</div>
+					<div class="section-container">
+						<div class="row">
+							<div class="col-lg-12 col-md-4 col-sm-6 col-xs-12" style="padding: 10px; ">
+								<!-- <span>Correo electrónico</span> --> 
+								<input class="form-control" placeholder="Correo electrónico" type="" name="">
+							</div>
+							<div class="col-lg-12 col-md-4">
+								 <label><input type="checkbox" checked name=""><span> Recibir promociones y ofertas exclusivas</span></label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section-content">
+					<div class="section-header">
+						<h3>Datos del cliente</h3> 
+					</div>
+					<div class="section-container">
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding: 10px; ">
+								<span>Nombre del cliente</span> 
+								<input class="form-control" placeholder="nombres" type="" name="">
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding: 10px; ">
+								<span>Primer apellido</span> 
+								<input class="form-control" placeholder="primer apellido" type="" name="">
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding: 10px; ">
+								<span>Segundo apellido</span> 
+								<input class="form-control" placeholder="segundo apellido" type="" name="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding: 10px; ">
+								<span>RFC</span>
+								<input class="form-control" placeholder="JULBR101938" type="" name="">
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding: 10px; ">
+								<span>Correo</span>
+								<input class="form-control" placeholder="taller@refaccionexpress.com" type="" name="">
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding: 10px; ">
+								<span>Teléfono</span>
+								<input class="form-control" placeholder="(33) 01010101" type="" name="">
+							</div>
+							@include('blocks/inicio')
+						</div>
+					</div>
+				</div> 
+				<div class="section-container" style="padding: 20px 0px;"> 
+					<div class="section-header" style="padding-right: 0px;">
+						<div class="col-lg-12" style="text-align: right; padding-top: 20px; padding-right: 0px;">
+							<button class="btn btn-primary btn-checkout">Siguiente paso</button>
+						</div>
+					</div> 
+				</div>
+			</div>	
+
+
+			<div class="section-container checkout-step step-datos-envio" style="padding: 20px 20px;">
+				<div class="section-content">
+					<div class="section-header">
+						<h2>Datos de envío</h2>
+					</div>
+					<div class="section-container">
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding: 10px; ">
+								<span>Estado</span> 
+								<select class="form-control">
+									<option>Jalisco</option>
+								</select>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding: 10px; ">
+								<span>Ciudad / Municipio</span> 
+								<select class="form-control">
+									<option>Guadalajara</option>
+									<option>Zapopan</option>
+								</select>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding: 10px; ">
+								<span>CP</span> 
+								<input class="form-control" placeholder="45138" type="" name="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12" style="padding: 10px; ">
+								<span>Dirección</span>
+								<input class="form-control" placeholder="Av. San Pedro 2018 esq. con San R." type="" name="">
+							</div> 
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding: 10px; ">
+								<span>Número</span>
+								<input class="form-control" placeholder="#201 A" type="" name="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+
+			<div class="section-container checkout-step step-datos-pago" style="padding: 20px 20px;">
+				<div class="section-content">
+					<div class="section-header">
+						<div class="col-lg-4" style="padding-left: 0px;">
+							<h2>Pago</h2>	
+						</div>   
+						<div class="col-lg-8" style="text-align: left; padding-top: 20px;">
+							<img style="width: 35%;" src="media/pay.png">
+						</div>
+					</div>
+					<div class="section-container">
+						<div class="row">
+							<div class="col-lg-8 col-md-8 col-sm-6 col-xs-12" style="padding: 10px; ">
+								<span>Nombre del propietario</span>
+								<input class="form-control" placeholder="" type="" name="">
+							</div> 
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding: 10px; ">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding: 10px; ">
+								<span>Número de tarjeta</span>  
+								<input class="form-control" placeholder="XXXX - XXXX - XXXX - XXXX" type="" name="">
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding: 10px; ">
+								<span>Expira</span>  
+								<input class="form-control" placeholder="MM/YYYY" type="" name="">
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding: 10px; ">
+								<span>CV</span>  
+								 <input class="form-control" placeholder="1234" type="" name="">
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" style="padding: 10px; padding-top: 20px;">
+								 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+
+			<style type="text/css">
+				.checkout-step {
+					display: none; 
+				}
+				.step-datos-cliente {
+					display: inline-block;
+				}
+			</style>
+ 
+		</div>
+	</div>
+
+	<!-- SIDE RIGHT --> 
+	<div class="products-section col-lg-3 col-md-12 col-sm-12" style="margin-bottom: 40px;"> 
+		<div class="container-prods col-lg-12" style="border: 1px solid #efeeeb; border-radius: 3px; padding: 10px; ">
+			<h3 style="margin: 5px 0px; font-weight: 700; ">Estás pagando</h3>
+			
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px">
+				<hr> 
+			</div>
+
+			@php $total = 0; @endphp 
+			@foreach( \Session::get('productos') as $k => $pr ) 
+				@php $total+= $pr['price']; @endphp 
+				<div class="col-lg-12">
+					<div class="col-lg-4" style="padding: 0px;">
+						@for($i = 0; $i < 10; $i++)
+			              @if(  file_exists(public_path().'/media/productos/part_'.$i.'/'.$pr['np'].'_0.jpg') )
+			                <img style="width: 100%;" class="img-car owl-lazy" src="{{asset('media/productos/').'/part_'.$i.'/'.$pr['np'].'_0.jpg'}}" src="" alt="Producto">
+			                @break  
+			              @endif 
+			            @endfor   
+					</div>
+					<div class="col-lg-8" style="padding: 0px; font-size: 12px; text-align: right;">
+						<p>{{$pr['name']}}</p>
+				        <p>{{$pr['np']}}</p>
+				        <p style="font-weight: bold;">${{$pr['price']}}</p>
+					</div>
+				</div>
+			@endforeach 
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px">
+				<hr> 
+			</div>
+  			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px;"> 
+				<div class="col-lg-9">
+					<input class="form-control" placeholder="código de descuento" type="" name="">
+				</div>
+				<div class="col-lg-3" style="padding: 0px 10px;">
+					<button class="btn btn-primary">Usar</button>
+				</div>
+			</div>
+  			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px">
+				<hr> 
+			</div>
+  			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+				<span style="font-size: 15px; font-weight: 500; color: #333333;">  
+					Subtotal: <span style=" color: #c4262e;" >${{number_format($total, 2)}}</span>
+				</span> 
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px">
+				<hr> 
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+				<span style="font-size: 14px; font-weight: 500; color: #333333;">  
+					Envío: <span style=" color: #c4262e;" > calculado en el siguiente paso</span>
+				</span> 
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px">
+				<hr> 
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+				<span style="font-size: 17px; font-weight: 900; color: #333333;">  
+					TOTAL: <span style=" color: #c4262e;" >${{number_format($total, 2)}} MNX </span>
+				</span> 
+			</div>
+ 
+		</div>
+	</div>
+  
+</div>
+
+<script type="text/javascript">
+	var step = 0; 
+	$('.btn-checkout').click( function() {
+		if( step == 0 ) { 
+			step = 1; 
+			$('.checkout-step').css('display', 'none'); 
+			$('.step-datos-envio').css('display', 'block'); 
+		} else if( step == 1) {
+			$('.checkout-step').css('display', 'none'); 
+			$('.step-datos-pago').css('display', 'block'); 
+		}
+	}); 
+</script>
+
+ 
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+ 
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
+ 
+
+<style type="text/css">
+
+	.block-buscar {
+
+		background: #2cb201;
+
+		border-radius: 0px; 
+
+		font-weight: bolder; 
+
+		font-size: 20px; 
+
+	}
+
+	 
+
+.form-inline .form-control { 
+
+    display: inline-block;
+
+    width: auto;
+
+    vertical-align: middle;
+
+    height: 40px;
+
+    border-radius: 1px; }
+
+ 
+
+
+
+ .container-seleccionar-vehiculo {
+
+ 	transition-property: all; 
+
+ 	transition-duration: .2s; 
+
+ }
+
+ .selected-car {
+
+ 	transition-property: all; 
+
+ 	transition-duration: .2s; 
+
+ 	transform: scale(1.7); 
+
+ }
+
+ .unidad>div {
+
+ 	height: 200px; 
+
+ 	/*background-color: gray; */ 
+
+ }
+
+ .selector-anio {
+
+ 	opacity: 0; 
+
+ 	transition-property: all; 
+
+ 	transition-duration: .2s; 
+
+ }
+
+
+
+  .container-seleccionar-vehiculo .owl-dots {
+
+  	display: none; 
+
+  }
+ 
+  .back-to-marca:hover {
+  	cursor: pointer;
+  }
+  .powerbanners-container:parent {
+  	display: none!important; 
+  }
+  .col-main {
+  	margin: 10px!important;
+  }
+</style> 
+ @endsection

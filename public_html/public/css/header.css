@@ -1,0 +1,467 @@
+	.subelement {
+      display: none!important;
+      
+     }
+     .li-menu:hover + .subelement {
+      display: block!important; 
+     }
+     .dropdown-menu {
+      width: 10vw;
+      position: absolute; 
+      left: 0%;
+     }
+    .li-menu {
+      display: inline-block!important;
+      width: 200px!important;
+      color: black!important; 
+    }
+    .li-menu a {
+      color: black!important; 
+    }
+
+/* RESTYLE OWL SLIDER*/ 
+.owl-prev {
+  position: absolute!important;
+    left: -1px!important;
+    font-size: 70px!important;
+    background-color: #fdc400 !important; 
+    background-position-y: center!important;
+    vertical-align: middle!important;
+    top: 17vh!important;
+    color: white!important;
+    border-radius: 50%!important;
+    width: 35px!important;
+    height: 35px!important;
+    line-height: 0px!important;
+    padding-bottom: 10px!important;
+    cursor: pointer!important;
+}
+.owl-next {
+  position: absolute!important;
+    right: -1px!important;
+    font-size: 70px!important;
+    background-color: #fdc400 !important; 
+    background-position-y: center!important;
+    vertical-align: middle!important;
+    top: 17vh!important;
+    color: white!important;
+    border-radius: 50%!important;
+    width: 35px!important;
+    height: 35px!important;
+    line-height: 0px!important;
+    padding-bottom: 10px!important;
+    cursor: pointer!important;
+}
+
+
+/* RESTYLE OWL SLIDER*/ 
+.list-banners .owl-prev {
+    top: 25vh!important;
+}
+.list-banners .owl-next {
+    top: 25vh!important;
+}
+
+.owl-prev span, .owl-next span{
+  padding-bottom: 7px!important;
+    display: inline-block;
+}
+.owl-prev:active, .owl-next:active {
+  transform: scale(1.1); 
+}
+ 
+/* BRANDS SLIDER */
+
+/* RESTYLE OWL SLIDER*/ 
+.list-brands .owl-prev {
+    top: 3vh!important; 
+}
+.list-brands .owl-next {
+    top: 3vh!important;
+}
+
+  .modal-body {
+    display: inline-grid;
+  }
+
+  .menu-top-mobil { 
+    position: fixed;
+    display: none; 
+    width: 100%; 
+    z-index: 9999; 
+  }
+
+/* CATEGORÍES */ 
+.container-buscador { padding: 20px 0px 0px 0px; }
+.products-section { padding: 0px 15px; }
+.filter-section { border: 1px solid #efeeeb; border-radius: 3px; padding: 10px; }
+
+
+
+
+/* HOME */ 
+
+ .shopy {
+          height: 40px; 
+          width: 40px;  
+          background-image: url('https://begima.com.mx/public/icons/cart_2.svg'); 
+          background-size: contain;
+          display: inline-block; 
+         }
+         .navbar-toggle:active {
+          transform: scale(1.2);
+         }
+         .navbar-toggle {
+          background-color: #5a308d!important; 
+         }
+         .navbar-toggle .icon-bar {
+          background-color: white!important; 
+         }
+         .navbar-brand {
+          color: black!important;
+         }
+         .search-input-mobil {
+          border-radius: 0px; 
+          box-shadow: none; 
+          border: 2px solid #ccc;
+         }
+         .container-search-mobile {
+          padding: 0px 10px 0px 14px;
+         }
+         .list-category-blocks .col-xs-4 {
+          padding: 0px!important;
+         }
+ 
+
+         .row-header {
+          position: fixed;
+          width: 100%;
+          z-index: 999999999;
+          background-color: whitesmoke;
+         }
+
+         .banner-section {
+          padding-top: 110px!important; 
+         } 
+         /*1920 ancho x 880 */ 
+
+/* // HOME */ 
+
+/* LIST-PRODUCTS */
+  .content-list-products {
+    text-align: center; 
+    padding: 120px 380px;
+  }
+/* -- LIST PRODUCTS */ 
+
+.content-logo { 
+        height: 120px;  
+      background-image: url('../media/begima logotipo-01.png'); 
+      background-repeat: no-repeat; 
+      background-position: center;
+      background-size: contain; 
+    }
+.content-logo- img {
+  width: 30%;  
+} 
+.content-logo- {
+  text-align: center; padding-top: 0px;
+}
+
+.container-checkout-t1 {
+  padding: 30px 55px; margin-top: 80px;
+}
+
+.header-success {
+  font-weight: 900; color: #4ad295;
+}
+  /* SUCCESS */ 
+.container-success {
+  padding: 270px 0px; background-color: whitesmoke; text-align: center;
+}
+.success-text { font-size: 15px; }
+.success-icon { width: 100px; }
+.success-waint {
+  font-weight: 900; color: #4ad295; 
+}
+ 
+@media (max-width: 600px) { 
+  .row-logo { display: none!important; }
+  .list-banners { display: none!important; }
+  .cat-element-content {
+    width: 40vw!important;
+    height: 40vw!important;
+    border: 2px solid black;
+  }
+
+  .section-element { padding: 0px; }
+  .banner-section { 
+  		padding-left: 0px; 
+  		padding-right: 0px;
+  	}
+
+  /* SUCCESS */ 
+  .success-download { font-size: 17px; }
+  .success-download2 { font-size: 17px; }
+  .success-text-order { font-size: 17px!important; }
+  .success-waint {
+    font-size: 17px; 
+  }
+  .container-success {
+    padding: 120px 0px; background-color: whitesmoke; text-align: center;
+  }
+  .success-icon { width: 40px!important; } 
+  .header-success {
+    font-weight: 900; color: #4ad295;
+    font-size: 25px;
+}
+.success-text { font-size: 12px; }
+
+  .content-logo- {
+    padding-top: 40px; 
+  }
+  .container-checkout-t1 {
+  padding: 0px; margin-top: 170px;
+}
+
+  .content-logo- img {
+    width: 30%;  
+  }
+    /* LIST PRODUCTS */ 
+       .content-list-products {
+        padding: 0px 5px;
+      }
+    /* -- LIST PRODUCTS */ 
+
+    /* HOME */ 
+    .banner-section {
+        padding-top: 35px!important; 
+     } 
+     .content-logo {
+        background-position-y: 40px!important;
+        height: 110px; 
+        background-size: 50%;
+    }
+    /* //HOME */ 
+
+    .menu-top-mobil { display: block; }
+    .row-logo {
+        padding-top: 40px;
+    }
+    .modal-body {
+      display: inline-block!important;
+    }
+    .submenu {
+      display: none;
+    }
+    .cat-mujer {
+      height: 100px; 
+    }
+    .category-content {
+      margin-top: 20px; 
+      font-size: 10px;
+    }
+    .cat-left {
+      padding-top: 0px!important; 
+      text-align: center;
+    }  
+    .list-banners { display: none!important; }
+    .list-banners-m { display: block!important; padding-top:10px; } 
+    .submenu-mobil {
+      display: inline-block!important; 
+    }
+
+    /* CATEGORÍAS */ 
+    .row-logo {
+      padding-top: 0px; 
+    }
+    .main-text { margin-top: 0px; font-size: 24px;  }
+    .container-buscador { padding: 0px 0px 0px 0px; }
+  .products-section { padding: 80px 15px; }
+  .to-filter-field h2 { font-size: 20px; }
+  .filter-section { background-color: black; color: white; padding: 0px!important; text-align: center; }
+  .controls-product .name { font-size: 18px!important; font-weight: 500!important; color: black!important; min-height: 120px!important; }
+  .container-img {
+    min-height: 200px!important;
+    background-size: 100%!important;
+  }
+
+
+  .dropdown-toggle::after {
+    background-image: url(https://begima.com.mx/public/icons/arrow2.svg);
+    width: 30%!important;
+    height: 20px!important;
+    margin-left: 20px;
+    background-position: center!important;
+    background-size: 20px 20px!important;
+    z-index: 9999;
+}
+
+.menu-top-mobil {
+  display: inline-table!important;
+}
+.dropdown-menu.level-menu {
+    display: contents;
+    border-left: 10px solid black!important;
+}
+.dropdown-submenu-toggle {
+  font-weight: 800!important; 
+  font-size: 22px!important; 
+}
+
+
+}
+
+	/* ********************* */ 
+
+ 
+	.submenu {
+		padding: 0px!important; 
+		margin-bottom: 0px;
+	}
+	.main-menu {
+		margin-bottom: 0px!important; 
+	}
+	.submenu span, .submenu a , .submenu a:active{ 
+		display: inline-block;
+		padding-left: 20px;
+		color: white; 
+	}
+	.main-menu li {
+		display: inline-block;
+		padding-right: 30px;
+		height: 45px;
+		padding-top: 10px; 
+		transition-property: all; 
+		transition-duration: .2s; 
+		padding-left: 20px; 
+	}	 
+	.main-menu .hover:hover { 
+		cursor: pointer;
+		background-color: #e1e1e1; 
+		transition-property: all; 
+		transition-duration: .2s; 
+	}
+	.btn-add {
+		background-color: black; color: white; padding: 5px 15px; margin-top: 10px;
+	}
+	.btn-add:hover {
+		cursor: pointer;
+		background-color: white; 
+		color: black; 
+		border: 2px solid black;
+		transition-property: all;
+		transition-duration: .2s;
+	}
+	.cart-section:hover {
+		cursor: pointer;
+		color: gray;
+	}
+	.submenu span:hover {
+		cursor: pointer;
+	}
+	.search {
+    	background-position-y: center;
+    	background-size: 25px;
+    	background-size: 20px;
+    	padding-right: 42px;
+    	background-repeat: no-repeat;
+    	background-position-x: 95%;    
+	} 
+	.input-search:focus{ outline: 0px!important; border: 0px!important; }
+	.input-search { padding: 4px; border: 0px; border-left: 2px solid white; } 
+    .to-search { border: 0px; box-shadow: none; color: #2c55b2; background-color: #f1f1f1; text-align: center; }
+   
+    .dropdown-menu > li {
+    	height: 30px; padding: 20px 0px; width: 100%;
+    }
+     
+
+
+
+
+    			.main-menu li {
+				padding-bottom: 5px;  
+        font-size: 20px; 
+			} 
+			.main-menu { padding-left: 0px; height: 45px;}
+			.search {
+				box-shadow: none; 
+				border-radius: 0px; 
+				width: 40%;
+				display: inline-block;
+				background-color: #f1f1f1;
+  				width: 60%;
+  				font-size: 12px;
+			}
+ 
+* { box-sizing: border-box; }
+body {
+  font: 16px Arial;
+}
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+ 
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+}
+.autocomplete-items {
+  font-size: 14px;
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+
+	.login-btn {
+		width: 100%; 
+	    background-size: 20px;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    background-position-x: 10px;
+	    width: 100%; 
+	}
+	.fb {
+		background-image: url('../media/fb.png');
+	}
+	.goo {
+		background-image: url('../media/goo.png');
+	}
+	.por-correo {
+		width: 100%; padding: 5px 10px; background-color: #00a850; color: white; 
+		border-radius: 4px; 
+	}
+	.por-correo:hover {
+		cursor: pointer;
+	}   
