@@ -279,9 +279,9 @@ Route::get('/files',  'Files@test');
 Route::post('/borrarFoto',  'Files@borrarFoto');
   
 /////////// V I S T A    D E L    C L I E N T E 
-Route::get('/',          'Cliente\Home@home');
-Route::get('/home',          'Cliente\Home@home');
-Route::get('/home4',          'Cliente\Home@home4'); 
+Route::get('/',        'Cliente\Home@home');
+Route::get('/home',    'Cliente\Home@home');
+Route::get('/home4',   'Cliente\Home@home4'); 
 
 Route::get('/home2',   function() { return view('home2'); }); 
 
@@ -336,8 +336,7 @@ Route::post('/api', 'Api@setProducts');
 
 Route::get('/descargar-app', 'Files@app');  
 
-
-
+ 
 Route::get('/import', 'ImportController@import'); 
     
 Route::get('/importOdoo', 'ImportController@importOdoo'); 
