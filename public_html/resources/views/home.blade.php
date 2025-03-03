@@ -293,7 +293,7 @@
 <script type="text/javascript">
 
 	if( localStorage.getItem("fit") ) {
-		alert( localStorage.getItem("idFit") ); 
+		//alert( localStorage.getItem("idFit") ); 
 		$(".data-widget").html( localStorage.getItem("fit") ); 
 	}
 

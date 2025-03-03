@@ -1,11 +1,11 @@
 <?php
-
- 	header('Access-Control-Allow-Origin: *'); 
-    header("Access-Control-Allow-Credentials: true");
-    header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
-    header('Access-Control-Max-Age: 1000');
-    header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token , Authorization');
  
+header('Access-Control-Allow-Origin: *'); 
+header("Access-Control-Allow-Credentials: true");
+header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
+header('Access-Control-Max-Age: 1000');
+header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token , Authorization');
+
 // link para facturacion 
 
 Route::get('facturacion', 'Cliente\Facturacion@facturacion'); 
@@ -280,6 +280,7 @@ Route::post('/borrarFoto',  'Files@borrarFoto');
   
 /////////// V I S T A    D E L    C L I E N T E 
 Route::get('/',          'Cliente\Home@home');
+Route::get('/home',          'Cliente\Home@home');
 Route::get('/home4',          'Cliente\Home@home4'); 
 
 Route::get('/home2',   function() { return view('home2'); }); 
@@ -341,9 +342,7 @@ Route::get('/import', 'ImportController@import');
     
 Route::get('/importOdoo', 'ImportController@importOdoo'); 
  
-
-
-
+ 
 Route::get('/testImportOdooTest', 'ImportController@testImportOdooTest'); 
 Route::get('/downLoadImg', 'ImportController@downLoadImg');  
 Route::get('/downLoadImgOne/{sku}', 'ImportController@downLoadImgOne');    

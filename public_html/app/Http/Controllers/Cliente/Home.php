@@ -529,8 +529,9 @@ class Home extends BaseController
         $marcas = DB::select("SELECT * FROM nissan_marcas WHERE show_in_home = 1");
         $sliders_type = DB::select("SELECT * FROM config_sliders WHERE fill_with = 'products'");
 
-        $fits_brand = null; 
+        $fits_brand = null;  
         
+        /* 
         $fits_brand = DB::select("SELECT * FROM fit_brand"); 
         foreach ( $fits_brand as $key => $_brand) {
             //print_r( $_brand->id_fit_model ); 
@@ -549,7 +550,7 @@ class Home extends BaseController
             $_brand->models_arr = $fits_models; 
             //$_brand->models_arr = DB::select("SELECT * FROM fit_model WHERE id_parent = $brand_parent"); 
         }
-          
+          */ 
         
         //return $fits_brand;  
 
