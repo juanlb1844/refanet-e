@@ -1,9 +1,8 @@
 @extends('layout')
-
-
+ 
 <script src="https://maps.googleapis.com/maps/api/ js?key=AIzaSyCnv72PEr9fr4qBRh3RMwjyX8Ow8R_m4yo&callback=initMap1&libraries=&v=weekly"
                 async></script>
-                
+
 <!-- OPENPAY -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://js.openpay.mx/openpay.v1.min.js"></script>
