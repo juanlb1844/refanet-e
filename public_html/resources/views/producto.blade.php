@@ -452,7 +452,7 @@
 		<div class="aside-gallery">
 			@foreach( $imgs as $index => $img)
 				<div class="gallery-element-aside" number="{{$index}}">
-					<img number="{{$index}}" width="100%" src="{{$img->link}}">
+					<img number="{{$index}}" width="100%" src="{{URL::asset($img->link)}}">
 				</div>
 		 	@endforeach 
 		</div>
@@ -517,7 +517,7 @@
                     	@foreach( $imgs as $index => $img)
 						 	 <a href="{{$img->link}}" data-caption="{{$_product->title}}">  
 						 		   
-			                         <img id="img-{{$index}}" index="{{$index}}" style="width: 100%; display: inline-block; border-radius: 10px; " class="img-car owl-lazy img-gall" data-src="{{$img->link}}" src="{{$img->link}}" alt="Begima">  
+			                         <img id="img-{{$index}}" index="{{$index}}" style="width: 100%; display: inline-block; border-radius: 10px; " class="img-car owl-lazy img-gall" data-src="{{URL::asset($img->link)}}" src="{{$img->link}}" alt="Begima">  
 			                   
 							  </a>  
 					 	@endforeach 

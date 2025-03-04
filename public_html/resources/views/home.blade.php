@@ -157,7 +157,7 @@
 	<div class="products-section col-lg-12 col-xs-12 section-element" style="padding: 60px 120px;">
 			<div>
 				<h3 style="font-weight: 900;">{{$sliders_type[0]->title}}</h3> 
-				<h4>{{$sliders_type[0]->subtitle}} <a href="https://begima.com.mx/catalogo/productos-nuevos">ver todo</a></h4> 
+				<h4>{{$sliders_type[0]->subtitle}} <a href="/productos-nuevos">ver todo</a></h4> 
 			</div> 
 			<div class="owl-carousel owl-theme list-products" style="text-align: center;"> 
 				 @each('catalogo/product/view/item', $slider_p, 'product') 

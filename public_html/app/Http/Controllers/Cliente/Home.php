@@ -476,6 +476,34 @@ class Home extends BaseController
             ->where([['id', '=', session()->get('user')->id]])->get()[0]);
     }
 
+
+    public function createCacheModels() {
+
+
+        $fits_brand = DB::select("SELECT * FROM fit_brand"); 
+        foreach ( $fits_brand as $key => $_brand) {
+            //print_r( $_brand->id_fit_model ); 
+            $brand_parent = $_brand->id_fit_model;
+            $fits_models = DB::select("SELECT * FROM fit_model WHERE id_parent = $brand_parent");  
+            foreach ($fits_models as $key_model => $_model ) {
+                $model_parent  = $_model->id_fit_model; 
+                $fits_year     = DB::select("SELECT * FROM fit_year WHERE id_parent = $model_parent");
+                foreach ($fits_year as $key_engine => $year_row) {
+                    $_year_parent = $year_row->id_fit_model; 
+                    $fits_engines = DB::select("SELECT * FROM fit_engine WHERE id_parent = $_year_parent");  
+                    $year_row->engines = $fits_engines; 
+                }
+                $_model->years = $fits_year;   
+            } 
+            $_brand->models_arr = $fits_models; 
+            //$_brand->models_arr = DB::select("SELECT * FROM fit_model WHERE id_parent = $brand_parent"); 
+        }
+
+        file_put_contents('fits.json', json_encode($fits_brand));
+    
+        print_r( json_encode($fits_brand) ); 
+    }
+
     // Página | Home
     public function home()
     {
@@ -552,6 +580,9 @@ class Home extends BaseController
         }
           */ 
         
+        $fits_brand = file_get_contents("./fits.json"); 
+        $fits_brand = json_decode($fits_brand); 
+        //print_r($fits_json); return; 
         //return $fits_brand;  
 
         return view('home', ['slider_p' => $this->getProductsByCat(24, 15),

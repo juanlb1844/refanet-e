@@ -225,7 +225,7 @@ class ImportController extends BaseController
     }
 
     function postInSite( $product, $img ) {
-    	$path = $this->getPath();     
+    	$path = "";       
     	$fam = $product->categoria; 
 
     	if ( !$this->existCat($fam) ) {
@@ -280,12 +280,12 @@ class ImportController extends BaseController
 
 	function testImportOdooTest() {
  		$default_img = "default-img-no-img.jpg";  
-		$products = $this->getProductsOdoo(1000); 
+		$products = $this->getProductsOdoo(1); 
 		$ii = 0;  
 		foreach ( json_decode($products)->products as $key => $product ) {
-			
-			if( $ii > 100 ) { 
-   				 
+			  
+			if( $ii >  0 ) { 
+   				   
    				 /*  
    				if( $product->aplicacion ) {
 					$this->postInSite( $product, "/dealers/".$default_img ); 
@@ -313,7 +313,7 @@ class ImportController extends BaseController
 			}
  
 			$ii++;  
-			if( $ii == 200 ) { 
+			if( $ii == 100 ) { 
 				die(); 
 			}
 		}

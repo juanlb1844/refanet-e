@@ -7,7 +7,7 @@
             <a class="container-item" href="{{asset('producto')}}/{{$product->nparte}}/pack/{{$product->paquete}}">   
 
                 @if( isset( $product->gallery[1]  ) )
-                    <div class="content-img-product" style="background-image: url('{{ $product->gallery[1]->link }}');">   
+                    <div class="content-img-product" style="background-image: url('.{{ $product->gallery[1]->link }}');">   
                          @if($product->tipo_producto == 'paquete')
                             <div class="pack-bullet">
                                 <span>Kit</span>
@@ -16,7 +16,7 @@
                      </div> 
                  @else
                     <!-- <div class="content-img-product" style="background-image: url('{{ $product->img }}');">   --> 
-                     <div class="content-img-product" style="background-image: url('{{ $product->gallery[0]->link }}');">  
+                     <div class="content-img-product" style="background-image: url('.{{ $product->gallery[0]->link }}');">  
                          @if($product->tipo_producto == 'paquete')
                             <div class="pack-bullet">
                                 <span>Kit</span>
@@ -26,7 +26,7 @@
                 @endif 
 
                 @if( isset($product->medium_img) )
-                    <div class="content-img-product img-sec" style="background-image: url('{{$product->medium_img}}');">  
+                    <div class="content-img-product img-sec" style="background-image: url('.{{$product->medium_img}}');">  
                      @if($product->tipo_producto == 'paquete')
                         <div class="pack-bullet">
                             <span>Kit</span>
@@ -34,7 +34,7 @@
                      @endif 
                     </div> 
                 @else 
-                     <div class="content-img-product img-sec" style="background-image: url('{{$product->gallery[0]->link}}');">  
+                     <div class="content-img-product img-sec" style="background-image: url('.{{$product->gallery[0]->link}}');">  
                          @if($product->tipo_producto == 'paquete')
                             <div class="pack-bullet">
                                 <span>Kit</span>

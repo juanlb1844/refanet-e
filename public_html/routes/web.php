@@ -351,3 +351,4 @@ Route::get('/getProductsOdoo/{id}', 'ImportController@getProductsOdoo');
 Route::get('/getProductsOdooBy/{sku}', 'ImportController@getProductsOdooBy'); 
  
 Route::get('/searchImgInSite/{word}', 'ImportController@searchImgInSite');  
+Route::get("/createCacheModels", 'Cliente\Home@createCacheModels');  
