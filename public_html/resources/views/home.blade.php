@@ -182,16 +182,14 @@
 	<div class="products-section col-lg-12 col-xs-12 section-element" style="padding: 60px 120px;">
 		<div>
 			<h3 style="font-weight: 900;">{{$sliders_type[1]->title}}</h3>
-			<h4>{{$sliders_type[1]->subtitle}} <a href="https://begima.com.mx/catalogo/promociones">ver todo</a></h4>
+			<h4>{{$sliders_type[1]->subtitle}} <a href="/promociones">ver todo</a></h4>
 		</div>
 		<div class="owl-carousel owl-theme list-products" style="text-align: center;"> 
 	        @each('catalogo/product/view/item', $slider2, 'product') 
 	    </div> 
 	</div> 
 
-<!-- 
-@include('categories-row', $block)
---> 
+{{-- @include('categories-row', $block) --}}
   
 @php 
 	$marcas = array('begima', 'coco', 'bella', 'flex', 'gaiyi-np', 'ilys', 'rc-men', 'rosa', 'saven', 'spree', 'yalete', 'youmita'); 

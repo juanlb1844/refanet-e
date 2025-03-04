@@ -901,6 +901,7 @@
 					 
 				</div>
 
+				<!-- 
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display: none;">
 					<div class="content-info-colors">
 						<div class="header-content"><p>Colores</p></div>
@@ -910,7 +911,7 @@
 							<div class="color-shape shape-red" style="background-color: white;"></div>
 						</div>
 					</div>
-				</div>
+				</div> --> 
 
 
 				<style type="text/css">
@@ -998,6 +999,7 @@
 
  
 				</style> 
+				<!-- 
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6">
 					<div class="content-info-tallas">
 						<div class="header-content"><p>TALLAS</p></div>
@@ -1013,6 +1015,7 @@
 						</div>
 					</div>
 				</div>
+			--> 
 
 				<style type="text/css">
 					.content-info-pack a:hover { text-decoration: none; }
@@ -1059,6 +1062,7 @@
 								@endforeach  
 							</div>   
 						@else
+							<!-- 
 							<div class="header-content"><p>COLORES</p></div> 
 							<div>
 								@foreach( $colores as $key => $color )
@@ -1098,7 +1102,7 @@
 										@endif
 									@endif 
 								@endforeach 
-							</div>
+							</div> --> 
 						@endif 
 					</div>
 				</div>
